@@ -66,3 +66,4 @@ ret = re.match(r'^[\d|\w]+\@gmail\.com','someone@gmail.com')
 print(ret)
 #联系2：tom@voyager.org
 ret = re.match(r'^([\d|\w]+)\@voyager\.org','tom@voyager.org')
+print(ret.groups(1))
