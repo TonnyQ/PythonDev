@@ -17,3 +17,9 @@ with request.urlopen(req) as f:
     for k,v in f.getheaders():
         print("%s:%s" % (k,v))
     print('Data:',f.read().decode('utf-8'))
+
+from urllib import parse
+print('Login to weibo.cn...')
+email = input('Email:')
+passwd = input('Password:')
+login_data = parse.urlencode()
